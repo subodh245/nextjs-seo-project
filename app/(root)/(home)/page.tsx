@@ -1,3 +1,4 @@
+import SearchForm from "@/components/SearchForm";
 import React from "react";
 
 const Page = () => {
@@ -9,7 +10,9 @@ const Page = () => {
             JavaScript Mastery Resources
           </h1>
         </div>
+        <SearchForm />
       </section>
+      Filters
     </main>
   );
 };
