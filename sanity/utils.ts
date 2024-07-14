@@ -25,5 +25,7 @@ export function buildQuery(params: BuildQueryParams) {
 
   if (conditions.length > 1) {
     return `${conditions[0]} && (${conditions.slice(1).join(" && ")})]][${offset}...${limit}]`;
-  } else return `${conditions[0]} [${offset}...${limit}]`;
+  } else {
+    return `${conditions[0]} [${offset}...${limit}]`;
+  }
 }
